@@ -1,12 +1,15 @@
-// components/HealingJourney.tsx
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const HealingJourney: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const handleOpenModal = () => setIsModalOpen(true);
-  const handleCloseModal = () => setIsModalOpen(false);
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
 
   // Close modal when clicking outside of it
   const handleOverlayClick = (e: React.MouseEvent) => {
@@ -15,13 +18,19 @@ const HealingJourney: React.FC = () => {
     }
   };
 
+  // Effect to manage body overflow
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = 'hidden'; // Prevent scrolling
+    } else {
+      document.body.style.overflow = 'auto'; // Allow scrolling
+    }
+  }, [isModalOpen]);
+
   return (
     <div className="flex flex-col md:flex-row items-center mb-12">
       <div className="md:w-1/2 p-4">
-        <video
-          controls
-          className="w-full h-auto rounded-lg"
-        >
+        <video controls className="w-full h-auto rounded-lg">
           <source src="/path/to/your/video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -35,7 +44,7 @@ const HealingJourney: React.FC = () => {
       <div className="md:w-1/2 p-4 flex justify-center flex-col text-center">
         <h2 className="text-3xl font-bold text-green-800 mb-2 font-sans">WAIT... HOW?</h2>
         <h2 className="text-3xl font-bold text-green-800 mb-2 font-sans">
-          Here's the story of how I healed 12+ years of IBS, ADHD, spiked heart rate, past shame, and joint pain, permanently.
+          Here&apos;s the story of how I healed 12+ years of IBS, ADHD, spiked heart rate, past shame, and joint pain, permanently.
         </h2>
       </div>
 
@@ -45,13 +54,12 @@ const HealingJourney: React.FC = () => {
           className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
           onClick={handleOverlayClick} // Close modal on overlay click
         >
-          <div className="bg-white rounded-lg p-6 max-w-[60%] w-full overflow-y-auto max-h-[80vh]">
+          <div className="scroll-container bg-white rounded-lg p-6 max-w-[60%] w-full overflow-y-auto max-h-[80vh]">
             <h3 className="text-xl font-bold text-green-700 mb-4">Video Transcript</h3>
-            <p className="text-gray-700">
+            <div className="text-gray-700">
               {/* Replace with your actual transcript */}
               This is where the transcript of the video will go. You can include all relevant details or a summary of the video content.
-              This is where the transcript of the video will go. You can include all relevant details or a summary of the video content.This is where the transcript of the video will go. You can include all relevant details or a summary of the video content.This is where the transcript of the video will go. You can include all relevant details or a summary of the video content.This is where the transcript of the video will go. You can include all relevant details or a summary of the video content.This is where the transcript of the video will go. You can include all relevant details or a summary of the video content.This is where the transcript of the video will go. You can include all relevant details or a summary of the video content.This is where the transcript of the video will go. You can include all relevant details or a summary of the video content.This is where the transcript of the video will go. You can include all relevant details or a summary of the video content.This is where the transcript of the video will go. You can include all relevant details or a summary of the video content.This is where the transcript of the video will go. You can include all relevant details or a summary of the video content.This is where the transcript of the video will go. You can include all relevant details or a summary of the video content.This is where the transcript of the video will go. You can include all relevant details or a summary of the video content.This is where the transcript of the video will go. You can include all relevant details or a summary of the video content.This is where the transcript of the video will go. You can include all relevant details or a summary of the video content.This is where the transcript of the video will go. You can include all relevant details or a summary of the video content.This is where the transcript of the video will go. You can include all relevant details or a summary of the video content.This is where the transcript of the video will go. You can include all relevant details or a summary of the video content.This is where the transcript of the video will go. You can include all relevant details or a summary of the video content.This is where the transcript of the video will go. You can include all relevant details or a summary of the video content.This is where the transcript of the video will go. You can include all relevant details or a summary of the video content.
-            </p>
+            </div>
             <button
               onClick={handleCloseModal}
               className="mt-4 bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition duration-300"
