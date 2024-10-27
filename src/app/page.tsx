@@ -5,7 +5,7 @@ import ApproachAndBenefits from '@/components/homepageComponents/ApproachAndBene
 import HealingJourney from '@/components/homepageComponents/HealingJourney'
 import About from '@/components/homepageComponents/About'
 import HealingJourneyCertificates from '@/components/homepageComponents/HealingJourneyCertificates'
-import SenjaTestimonials from '@/components/SenjaTestimonials'
+import SenjaTestimonials from '@/components/homepageComponents/SenjaTestimonials'
 import Typeform from '@/components/homepageComponents/TypeForm'
 
 export default function Home() {
