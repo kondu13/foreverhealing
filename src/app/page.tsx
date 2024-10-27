@@ -6,6 +6,7 @@ import HealingJourney from '@/components/homepageComponents/HealingJourney'
 import About from '@/components/homepageComponents/About'
 import HealingJourneyCertificates from '@/components/homepageComponents/HealingJourneyCertificates'
 import SenjaTestimonials from '@/components/SenjaTestimonials'
+import Typeform from '@/components/homepageComponents/TypeForm'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <About/>
       <HealingJourneyCertificates/>
       <SenjaTestimonials/>
+      <Typeform/>
     </div>
   )
 }

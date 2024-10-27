@@ -29,7 +29,7 @@ const SenjaTestimonials: React.FC<SenjaTestimonialsProps> = ({ rootClassName = '
 
   return (
     <div className={`flex justify-center items-center py-10  ${rootClassName}`}>
-      <div className="w-[90%] px-4">
+      <div className="w-[95%] px-4">
         <div className="w-full  bg-green-50 shadow-lg rounded-lg overflow-hidden border border-green-300">
           <div 
             className="senja-embed" 
