@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
         <Link href="/" className="text-white text-2xl font-bold">ForeverHealing</Link>
         <div className="hidden md:flex space-x-4 items-center">
           <Link href="/" className="text-white hover:text-green-200">Home</Link>
-          <Link href="/about" className="text-white hover:text-green-200">About</Link>
+
           <Link href="/services" className="text-white hover:text-green-200">Services</Link>
           <button
             onClick={() => setIsContactPopupOpen(true)}
@@ -22,7 +22,13 @@ const Navbar: React.FC = () => {
           >
             Contact Us
           </button>
+
+          <Link href="https://cal.com/cheatcode/risk-free">
+            <button className="bg-white text-green-600 px-4 py-2 rounded hover:bg-green-100 transition duration-300">Book Now</button>
+          </Link>
         </div>
+
+        {/* This button is dropdown for smaller devices */}
         <button
           className="md:hidden text-white"
           onClick={() => setIsOpen(!isOpen)}
@@ -31,11 +37,12 @@ const Navbar: React.FC = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
           </svg>
         </button>
+
       </div>
+
       {isOpen && (
         <div className="md:hidden mt-2">
           <Link href="/" className="block text-white py-2 px-4 hover:bg-green-700">Home</Link>
-          <Link href="/about" className="block text-white py-2 px-4 hover:bg-green-700">About</Link>
           <Link href="/services" className="block text-white py-2 px-4 hover:bg-green-700">Services</Link>
           <button
             onClick={() => setIsContactPopupOpen(true)}
@@ -43,8 +50,12 @@ const Navbar: React.FC = () => {
           >
             Contact Us
           </button>
+          
+          <Link href="https://cal.com/cheatcode/risk-free" className="block text-white py-2 px-4 hover:bg-green-700">Book Now</Link>
+          
         </div>
       )}
+
       <ContactPopup isOpen={isContactPopupOpen} onClose={() => setIsContactPopupOpen(false)} />
     </nav>
   )
