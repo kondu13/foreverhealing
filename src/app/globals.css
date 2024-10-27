@@ -19,3 +19,8 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.senja-embed {
+  background-color: #f0fff4 !important; /* Your desired background color */
+  border-color: #a5d6a7 !important; /* Your desired border color */
+}
