@@ -33,9 +33,11 @@ const FAQPage: React.FC = () => {
         />
       ))}
 
-      <Demo/>
+      <div className='flex'>
+        <Demo/>
+        <BookSession/>
+      </div>
 
-      <BookSession/>
     </div>
   );
 };
