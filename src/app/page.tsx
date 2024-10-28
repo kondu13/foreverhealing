@@ -1,12 +1,12 @@
 'use client'
 
-import HeroSection from '@/components/homePageComponents/HeroSection'
-import Approach from '@/components/homePageComponents/Approach'
-import HealingJourney from '@/components/homePageComponents/HealingJourney'
-import About from '@/components/homePageComponents/About'
-import HealingJourneyCertificates from '@/components/homePageComponents/HealingJourneyCertificates'
-import SenjaTestimonials from '@/components/homePageComponents/SenjaTestimonials'
-import Typeform from '@/components/homePageComponents/TypeForm'
+import HeroSection from '@/components/homepageComponents/HeroSection'
+import Approach from '@/components/homepageComponents/Approach'
+import HealingJourney from '@/components/homepageComponents/HealingJourney'
+import About from '@/components/homepageComponents/About'
+import HealingJourneyCertificates from '@/components/homepageComponents/HealingJourneyCertificates'
+import SenjaTestimonials from '@/components/homepageComponents/SenjaTestimonials'
+import Typeform from '@/components/homepageComponents/TypeForm'
 
 export default function Home() {
   return (
