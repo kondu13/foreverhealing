@@ -50,23 +50,23 @@ const SuccessPage: React.FC = () => {
             description={story.description}
           />
         ))}
-        </div>
-
-        {/* Adding ShortDescriptions here for the new descriptions */}
-        <div className="mt-8">
-          <h3 className="text-3xl font-semibold text-gray-800 mb-4">More Stories</h3>
-          <div className="flex flex-wrap justify-between"> {/* Flex container for responsive layout */}
-            {descriptions.map((desc, index) => (
-              <div key={index} className="flex-1 m-2 min-w-[250px] max-w-[30%]"> {/* Control how many cards per row */}
-                <ShortDescription text={desc} />
-              </div>
-            ))}
-          </div>
-        </div>
-
-
       </div>
-      );
+
+      {/* Adding ShortDescriptions here for the new descriptions */}
+      <div className="mt-8">
+        <h3 className="text-3xl font-semibold text-gray-800 mb-4">More Stories</h3>
+        <div className="flex flex-wrap justify-between"> {/* Flex container for responsive layout */}
+          {descriptions.map((desc, index) => (
+            <div key={index} className="flex-1 m-2 min-w-[250px] max-w-[30%]"> {/* Control how many cards per row */}
+              <ShortDescription text={desc} />
+            </div>
+          ))}
+        </div>
+      </div>
+
+
+    </div>
+  );
 };
 
-      export default SuccessPage;
+export default SuccessPage;

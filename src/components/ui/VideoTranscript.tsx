@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Modal from '@/components/ui/Modal'; 
+import Modal from '@/components/ui/Modal';
 
 interface VideoTranscriptProps {
   videoSrc: string;
@@ -12,7 +12,7 @@ const VideoTranscript: React.FC<VideoTranscriptProps> = ({ videoSrc, transcript 
   return (
     <div className="p-4">
       {/* Reduced width and increased height */}
-      <video controls className="max-w-xl w-full h-96 rounded-lg mx-auto"> 
+      <video controls className="max-w-xl w-full h-96 rounded-lg mx-auto">
         <source src={videoSrc} type="video/mp4" />
         Your browser does not support the video tag.
       </video>

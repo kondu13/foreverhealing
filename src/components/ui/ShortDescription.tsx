@@ -19,7 +19,7 @@ const ShortDescription: React.FC<ShortDescriptionProps> = ({ text }) => {
     <div className="my-4 bg-white p-4 rounded-lg shadow-md">
       <p className="text-gray-700 text-lg">{shortenedText}</p>
       {text.length > 200 && (
-        <button 
+        <button
           className="text-blue-500 mt-2"
           onClick={handleOpenModal}
         >
@@ -29,8 +29,8 @@ const ShortDescription: React.FC<ShortDescriptionProps> = ({ text }) => {
 
       {/* Modal for full description */}
       <Modal isOpen={isOpen} onClose={handleCloseModal} title="Full Description">
-  <p className="text-gray-700">{text}</p>
-</Modal>
+        <p className="text-gray-700">{text}</p>
+      </Modal>
 
     </div>
   );
