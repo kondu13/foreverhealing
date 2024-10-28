@@ -1,7 +1,7 @@
 'use client'
 
 import HeroSection from '@/components/homepageComponents/HeroSection'
-import ApproachAndBenefits from '@/components/homepageComponents/ApproachAndBenefits'
+import Approach from '@/components/homepageComponents/Approach'
 import HealingJourney from '@/components/homepageComponents/HealingJourney'
 import About from '@/components/homepageComponents/About'
 import HealingJourneyCertificates from '@/components/homepageComponents/HealingJourneyCertificates'
@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="container mx-auto px-4 py-12">
       <HeroSection/>
-      <ApproachAndBenefits/>
+      <Approach/>
       <HealingJourney/>
       <About/>
       <HealingJourneyCertificates/>
