@@ -8,7 +8,7 @@ const Demo: React.FC = () => {
       <p className="text-2xl font-bold mb-4 text-black">but still feel skeptical?</p>
       <h1 className="text-4xl font-bold mb-4 text-black">EXPERIENCE</h1>
       <h1 className="text-4xl font-bold mb-4 text-black">THE RISK-FREE DEMO</h1>
-      <p className="text-2xl font-bold mb-4 text-black">IN 40 Minutes IF YOU DON'T FEEL:</p>
+      <p className="text-2xl font-bold mb-4 text-black">IN 40 Minutes IF YOU DON&apos;T FEEL:</p>
       <div className="text-black text-2xl mb-4">
         <span className="block font-bold mb-4">- REDUCTION in PAIN</span>
         <span className="block font-bold mb-4">- CLEARHEADED without thoughts</span>
