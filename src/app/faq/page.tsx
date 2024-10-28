@@ -33,11 +33,16 @@ const FAQPage: React.FC = () => {
         />
       ))}
 
-      <div className='flex'>
-        <Demo/>
-        <BookSession/>
+      <div className="flex items-center space-x-4 mt-8">
+        <div className="w-2/5 ">
+          {/* 40% width */}
+          <Demo />
+        </div>
+        <div className="w-3/5">
+          {/* 60% width */}
+          <BookSession />
+        </div>
       </div>
-
     </div>
   );
 };
