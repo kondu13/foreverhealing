@@ -33,13 +33,13 @@ const FAQPage: React.FC = () => {
         />
       ))}
 
-      <div className="flex items-center space-x-4 mt-8">
-        <div className="w-2/5 ">
-          {/* 40% width */}
+      <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-4 mt-8">
+        <div className="w-full md:w-2/5 mb-4 md:mb-0">
+          {/* 40% width on medium screens and above */}
           <Demo />
         </div>
-        <div className="w-3/5">
-          {/* 60% width */}
+        <div className="w-full md:w-3/5">
+          {/* 60% width on medium screens and above */}
           <BookSession />
         </div>
       </div>
