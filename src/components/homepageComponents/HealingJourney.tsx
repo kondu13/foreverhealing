@@ -1,6 +1,6 @@
 // HealingJourney.tsx
 import React from 'react';
-import VideoTranscript from '@/components/VideoTranscript'; // Adjust the path as needed
+import VideoTranscript from '@/components/ui/VideoTranscript'; // Adjust the path as needed
 
 const HealingJourney: React.FC = () => {
   const videoSrc = "/path/to/your/video.mp4"; // Update the video source

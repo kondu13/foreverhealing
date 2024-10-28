@@ -16,6 +16,9 @@ const Navbar: React.FC = () => {
           <Link href="/" className="text-white hover:text-green-200">Home</Link>
 
           <Link href="/services" className="text-white hover:text-green-200">Services</Link>
+
+          <Link href="/faq" className="text-white hover:text-green-200">FAQ</Link>
+
           <button
             onClick={() => setIsContactPopupOpen(true)}
             className="bg-white text-green-600 px-4 py-2 rounded hover:bg-green-100 transition duration-300"
@@ -44,6 +47,7 @@ const Navbar: React.FC = () => {
         <div className="md:hidden mt-2">
           <Link href="/" className="block text-white py-2 px-4 hover:bg-green-700">Home</Link>
           <Link href="/services" className="block text-white py-2 px-4 hover:bg-green-700">Services</Link>
+          <Link href="/faq" className="block text-white py-2 px-4 hover:bg-green-700">FAQ</Link>
           <button
             onClick={() => setIsContactPopupOpen(true)}
             className="block w-full text-left text-white py-2 px-4 hover:bg-green-700"

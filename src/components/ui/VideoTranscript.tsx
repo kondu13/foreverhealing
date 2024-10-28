@@ -35,7 +35,8 @@ const VideoTranscript: React.FC<VideoTranscriptProps> = ({ videoSrc, transcript 
 
   return (
     <div className="p-4">
-      <video controls className="w-full h-auto rounded-lg">
+      {/* Reduced width and increased height */}
+      <video controls className="max-w-xl w-full h-96 rounded-lg mx-auto"> 
         <source src={videoSrc} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
