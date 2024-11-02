@@ -15,7 +15,7 @@ const ThankYouPage = () => {
     // Redirect to the homepage after a short delay
     const timer = setTimeout(() => {
       router.push('/'); // Redirect to homepage
-    }, 3000); // Adjust the delay as needed
+    }, 5000); // Adjust the delay as needed
 
     // Cleanup the timer on component unmount
     return () => clearTimeout(timer);
