@@ -29,7 +29,7 @@ const ThankYouPage = () => {
         <p className="text-gray-500">You will be redirected shortly...</p>
         <div className="mt-6">
           <img 
-            src="https://images.unsplash.com/photo-1550962017-75d4ef5c8f03" // Example image URL
+            src="https://images.unsplash.com/photo-1550962017-75d4ef5c8f03" 
             alt="Thank You" 
             className="w-32 mx-auto mb-4 rounded-lg"
           />
