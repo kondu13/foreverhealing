@@ -22,9 +22,25 @@ const ThankYouPage = () => {
   }, [router]);
 
   return (
-    <div className="flex items-center justify-center h-screen">
-      <h1>Thank you for subscribing!</h1>
-      <p>You will be redirected shortly...</p>
+    <div className="flex items-center justify-center h-screen bg-gradient-to-r from-green-400 to-blue-500">
+      <div className="bg-white rounded-lg shadow-lg p-8 text-center">
+        <h1 className="text-3xl font-bold text-green-600 mb-4">Thank You!</h1>
+        <p className="text-lg text-gray-700 mb-6">Your subscription was successful.</p>
+        <p className="text-gray-500">You will be redirected shortly...</p>
+        <div className="mt-6">
+          <img 
+            src="https://images.unsplash.com/photo-1550962017-75d4ef5c8f03" // Example image URL
+            alt="Thank You" 
+            className="w-32 mx-auto mb-4 rounded-lg"
+          />
+        </div>
+        <button 
+          onClick={() => router.push('/')} 
+          className="mt-4 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition duration-300"
+        >
+          Go to Homepage
+        </button>
+      </div>
     </div>
   );
 };
